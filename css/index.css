@@ -109,6 +109,12 @@ body {
   color: var(--primary-color);
 }
 
+.logo-anchor {
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -130,7 +136,7 @@ body {
 }
 
 /* Hero Section */
-.hero {
+.main {
   background: linear-gradient(rgba(3, 45, 96, 0.9), rgba(3, 45, 96, 0.9)), url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
   height: 100vh;
   color: var(--white);
@@ -139,12 +145,12 @@ body {
   text-align: center;
 }
 
-.hero h1 {
+.main h1 {
   font-size: 3.5rem;
   margin-bottom: 20px;
 }
 
-.hero p {
+.main p {
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
@@ -619,37 +625,37 @@ body {
 }
 
 /* Keep hero and footer section in light mode always */
-.dark-mode .hero,
+.dark-mode .main,
 .dark-mode .footer {
   background: linear-gradient(rgba(3, 45, 96, 0.9), rgba(3, 45, 96, 0.9)),
   url('https://via.placeholder.com/1200x600') no-repeat center center/cover !important;
   color: #ffffff !important;
 }
 
-.dark-mode .hero h1,
-.dark-mode .hero p,
-.dark-mode .hero .btn {
+.dark-mode .main h1,
+.dark-mode .main p,
+.dark-mode .main .btn {
   color: inherit !important;
 }
 
-.dark-mode .hero .btn-primary {
+.dark-mode .main .btn-primary {
   background-color: var(--primary-color) !important;
   color: var(--white) !important;
   border-color: var(--primary-color) !important;
 }
 
-.dark-mode .hero .btn-primary:hover {
+.dark-mode .main .btn-primary:hover {
   background-color: transparent !important;
   color: var(--primary-color) !important;
 }
 
-.dark-mode .hero .btn-secondary {
+.dark-mode .main .btn-secondary {
   background-color: transparent !important;
   color: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
 }
 
-.dark-mode .hero .btn-secondary:hover {
+.dark-mode .main .btn-secondary:hover {
   background-color: var(--primary-color) !important;
   color: var(--white) !important;
 }
@@ -671,11 +677,11 @@ body {
     margin: 0 10px;
   }
 
-  .hero h1 {
+  .main h1 {
     font-size: 2.5rem;
   }
 
-  .hero p {
+  .main p {
     font-size: 1.2rem;
   }
 
